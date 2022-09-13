@@ -1,6 +1,6 @@
 /*Обнуление*/
 *{padding: 0;margin: 0;border: 0;}
-*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-bo}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box}
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 nav,footer,header,aside{display: block;}
@@ -29,8 +29,8 @@ body {
 
 .left {
 	background: #303d50;
-	width: 20%;
-	height: 100%;
+	width: 111.4%;
+	height: 89.91vh;
 }
 
 .right {
@@ -40,16 +40,26 @@ body {
 
 /* Aside */
 .aside {
-	height: 100%;
+	position: fixed;
+	top: 86px;
+	left: 0;
+	right: 0;
+	z-index: 5;
+
+	width: 17.95%;
+	height: 89.91vh;
+	
 }
 
-/* Main */
-.main {
-	width: 80%;
-}
 
 /* Header */
 .header {
+	position: fixed;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
 	width: 100%;
 
 	box-shadow: 0 -1px 15px rgba(12, 51, 92, .6);
@@ -150,6 +160,9 @@ body {
 }
 
 .search__input {
+	font-family: 'Open Sans', sans-serif;
+	color: #546a79;
+	font-size: 20px;
 	min-width: 320px;
 	width: 80%;
 	height: 50px;
@@ -172,6 +185,7 @@ body {
 
 /* Nav */
 .nav {
+	padding-top: 15px;
 }
 
 .nav__link {
@@ -180,6 +194,10 @@ body {
 	display: block;
 	color: #7f96a3;
 	padding: 15px 80px 15px 80px;
+}
+
+.nav__link:hover {
+	background: #243040;
 }
 
 .nav__link:last-child {
@@ -202,10 +220,10 @@ body {
 .footer {
 	border-top: 1px solid #4f5f6f;
    width: 20%;
-   height: 50px;
+   height: 30px;
 
-   position: absolute;
-   bottom: 0;
+   position: fixed;
+   bottom: 25px;
    left: 0;
    z-index: 500;
 }
@@ -213,18 +231,79 @@ body {
 
 /* Copyright */
 .copyright {
-	position: absolute;
+	/*position: absolute;
 	top: 40%;
-   left: 27%;
-	z-index: 500;
+	left: 27%;
+	z-index: 500;*/
+	margin: 22px 60px;
 
 	font-size: 12px;
 	color: #4f5f6f;
 }
 
 
-
-/* Test */
-.test {
-	display: inline-block;
+/* Main */
+.main {
+	margin-left: 20%;
 }
+
+
+/* Card */
+.card {
+
+}
+
+.card__items {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card__item {
+	display: flex;
+	background: #fff;
+	margin: 20px 10px 0 10px;
+	border: 1px solid #e4ebf1;
+}
+
+.card__item-icon {
+	background: #f9fafb;
+	color: #4fc1ee;
+	font-size: 30px;
+	margin-bottom: 25px;
+
+	width: 71px;
+	height: 71px;
+
+	border-right: 1px solid #e4ebf1;
+	border-bottom: 1px solid #e4ebf1;
+}
+
+.card__item-num {
+	margin: 20px 50px 5px 16px;
+	color: #546a79;
+	font-size: 24px;
+}
+
+.card__item-title {
+	margin: 0 0 0 14px;
+	color: #b4bfd1;
+}
+
+.padding-1 {
+	padding: 18px;
+}
+
+.padding-2 {
+	padding: 20px 22px;
+}
+
+.padding-3 {
+	padding: 20px 18px;
+}
+
+.padding-4 {
+	padding: 20px 24px;
+}
+
+
+/* Graph */
